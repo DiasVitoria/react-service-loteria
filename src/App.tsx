@@ -1,30 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
+import { cepProps } from './types';
+import  Cep  from './services/cep'
 
-interface cep {
-  bairro: string;
-  cep: string;
-  complemento: string;
-  ddd: string;
-  gia: string;
-  ibge: string;
-  localidade: string;
-  logradouro: string;
-  siafi: string;
-  uf: string;  
-}
 
 function App() {
   const [cep, setCep] = useState(''); 
   const url = `https://viacep.com.br/ws/${cep}/json`  
-  const [response,setResponse] = useState({} as cep);
+  const [response,setResponse] = useState({} as cepProps);
 
 
-  function obter(){
-    axios.get(url)
-    .then(({data}) => {
-      setResponse(data)
-    })
+  async function obter(){
+    setResponse(await Cep.get(url))
+    
+    // axios.get(url)
+    // .then(({data}) => {
+    //   setResponse(data)
+    // })
   }
 
   return (
