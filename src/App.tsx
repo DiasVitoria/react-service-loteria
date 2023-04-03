@@ -11,7 +11,7 @@ function App() {
 
 
   async function obter(){
-    setResponse(await Cep.get(url))
+    setResponse(await Cep.get(cep))
     
     // axios.get(url)
     // .then(({data}) => {
