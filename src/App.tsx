@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
-import { cepProps } from './types';
-import  Cep  from './services/cep'
+import { loteriaProps } from './types';
+import  Cep  from './services/loterias'
 
 
 function App() {
   const [cep, setCep] = useState(''); 
   const url = `https://viacep.com.br/ws/${cep}/json`  
-  const [response,setResponse] = useState({} as cepProps);
+  const [response,setResponse] = useState({} as loteriaProps);
 
 
   async function obter(){
-    setResponse(await Cep.get(cep))
+    setResponse(await Cep.get())
     
     // axios.get(url)
     // .then(({data}) => {
@@ -27,8 +27,8 @@ function App() {
         <button onClick={() => obter()}>Enviar</button>
       </div>
       <div>
-        Bairro: {response.bairro} <br />
-        Cidade: {response.localidade}
+        {/* Bairro: {response.bairro} <br />
+        Cidade: {response.localidade} */}
 
       </div>
     </div>

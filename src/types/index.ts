@@ -1,12 +1,18 @@
-export interface cepProps {
-    bairro: string;
-    cep: string;
-    complemento: string;
-    ddd: string;
-    gia: string;
-    ibge: string;
-    localidade: string;
-    logradouro: string;
-    siafi: string;
-    uf: string;  
+export interface loteriaProps {
+    megasena: Props;
+    lotofacil: Props;
+  }
+
+  export interface Props {
+    acumulado: boolean;
+    concursoEspecial: boolean;
+    dataApuracao: string;
+    dataPorExtenso: string;
+    dataProximoConcurso: string;
+    dezenas: string[];
+    numeroDoConcurso: number;
+    quantidadeGanhadores: number;
+    tipoJogo: string;
+    valorEstimadoProximoConcurso: number;
+    valorPremio: number;
   }
