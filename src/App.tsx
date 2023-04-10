@@ -1,37 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import axios from "axios";
-import { loteriaProps } from './types';
-import  Cep  from './services/loterias'
+import { Provider } from './contexto';
+import { PageLoteria } from './pages/pageLoteria';
 
 
 function App() {
-  const [cep, setCep] = useState(''); 
-  const url = `https://viacep.com.br/ws/${cep}/json`  
-  const [response,setResponse] = useState({} as loteriaProps);
-
-
-  async function obter(){
-    setResponse(await Cep.get())
-    
-    // axios.get(url)
-    // .then(({data}) => {
-    //   setResponse(data)
-    // })
-  }
 
   return (
-    <div>
-      <div>
-        <label htmlFor="">CEP</label>
-        <input type="text" value={cep} onChange={(e) => setCep(e.target.value)} />
-        <button onClick={() => obter()}>Enviar</button>
-      </div>
-      <div>
-        {/* Bairro: {response.bairro} <br />
-        Cidade: {response.localidade} */}
-
-      </div>
-    </div>
+    <Provider>
+      <PageLoteria />
+    </Provider>
   );
 }
 
