@@ -1,26 +1,26 @@
-.megasenaWrapper{
+.lotofacilWrapper{
     width: 20%;
     max-width: 430px;
     padding: 20px;
 
-    margin: 40px 0 0 40px;
+    margin: 10px 0 0 40px;
 }
 
 
-.megasenaWrapper h1 {
+.lotofacilWrapper h1 {
     display: inline;
     margin: 0 10px;
     position: absolute;
     margin-top: -5px;
-    color: #209869;
+    color: #930089;
     font-size: 30px;
 }
 
-.megasenaWrapper h3{
-    color: #209869;
+.lotofacilWrapper h3{
+    color: #930089;
 }
 
-.megasenaWrapper p {
+.lotofacilWrapper p {
     color: #4c556c;
     margin-top: 10px;
 }

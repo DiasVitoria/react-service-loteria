@@ -1,4 +1,13 @@
 .megasenaContainer{
-   background-color: aquamarine;
    display: flex;
+}
+
+.lotofacilContainer{
+   display: flex;
+}
+
+.bordinha {
+   margin: 20px auto;
+   width: 95%;
+   border-bottom: 1px solid #ddd;
 }

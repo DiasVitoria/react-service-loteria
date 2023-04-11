@@ -1,7 +1,7 @@
 import { Provider } from './contexto';
-import { PageLoteria } from './pages/pageLoteria';
 import "@fontsource/roboto"
 import "./index.css"
+import { PageLoteria } from './pages/pageLoteria';
 
 
 function App() {

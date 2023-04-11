@@ -1,0 +1,38 @@
+.numeroSorteadoLotofacil{
+    color: #930089;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 50px;
+}
+
+.bordaNumeroSorteadoLotofacil {
+    border-bottom: 1px solid #ddd;
+}
+
+.numeroswrapperLotofacil {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.numerosContainerLotofacil{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    
+}
+
+.numerosContainerLotofacil h1{
+    margin: 5px 0 0 50px;
+    color: #0066b3;
+}
+
+.numerosContainerLotofacil p {
+    color: #4c556c;
+    margin-left: 50px;
+
+}
+
+.numerosContainerLotofacil hr {
+    color: #ddd;
+
+}
