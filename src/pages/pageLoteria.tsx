@@ -1,17 +1,22 @@
 import { useEffect } from "react";
 import MegasenaPremio from "../components/Megasena/SorteioPremio/SorteioPremio";
-import { Contexto, Provider } from "../contexto";
-import { UseLoteria } from "../hooks"
+import { UseLoteria } from "../hooks";
+import NumerosMegasena from "../components/Megasena/Numeros/Numeros";
+import "./pageLoteria.css"
 
 export const PageLoteria = () => {
-    const { megasena, lotofacil } = UseLoteria();
+  const { megasena, lotofacil } = UseLoteria();
 
-    useEffect(() => {
-        console.log(megasena);
-        
-    })
+  useEffect(() => {
+    console.log(megasena);
+  });
 
-    return (
+  return (
+    <>
+      <div className="megasenaContainer">
         <MegasenaPremio />
-    );
-}
+        <NumerosMegasena />
+      </div>
+    </>
+  );
+};

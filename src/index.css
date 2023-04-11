@@ -1,3 +1,5 @@
-body {
+*,
+*::before,
+*::after {
     font-family: "Roboto";
 }

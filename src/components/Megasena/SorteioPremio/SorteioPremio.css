@@ -1,0 +1,27 @@
+.megasenaWrapper{
+    width: 30%;
+    max-width: 430px;
+    padding: 20px;
+
+    margin: 40px 0 0 40px;
+}
+
+
+.megasenaWrapper h1 {
+    display: inline;
+    margin: 0 10px;
+    position: absolute;
+    margin-top: -5px;
+    color: #209869;
+    font-size: 30px;
+}
+
+.megasenaWrapper h3{
+    color: #209869;
+}
+
+.megasenaWrapper p {
+    color: #4c556c;
+    margin-top: 10px;
+}
+
